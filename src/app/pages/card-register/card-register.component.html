@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-4" *ngFor="let item of dataCard">
+        <app-card [cardText]="item.cardText" [cardImage]="item.cardImage"></app-card>
+        <!--<app-card cardText="HTML"></app-card>-->
+    </div>
+  </div>
+<div class="row">
+    <div class="col-10">
+      <h2>Formulario de Registro</h2>
+      <app-form-card (envioCard)="addCard($event)"></app-form-card>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col"></div>
+</div>
+
+<div class="row" style="width: 100%;">
+    <div class="col-md-6 col-lg-4" *ngFor="let article of articles">
+        <app-card *ngFor="let new of articles"
+            [cardText]="new.title"
+            [cardImage]="new.urlToImage">
+        </app-card>
+    </div>
+</div>
+

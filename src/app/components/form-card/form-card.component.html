@@ -1,0 +1,12 @@
+<form (ngSubmit)="addCard()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Lenguaje de programacion</label>
+      <input name="lenguaje" id="lenguaje" type="text" [(ngModel)]="card.cardText" class="form-control" placeholder="Ingresa el lenguaje de programación">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Link imagen</label>
+      <input name="imagen" id="imagen" type="text" [(ngModel)]="card.cardImage" class="form-control" placeholder="Ingresa el link de tu imagen">
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+    <button type="button" class="btn btn-danger" style="margin-left: 20px;">Cancelar</button>
+</form>
